@@ -1,0 +1,5 @@
+<aura:component implements="force:lightningQuickAction,force:hasRecordId" >
+    <aura:attribute name="recordId" type="String" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+	<c:peCSVFileReadLWC recordId="{!v.recordId}"></c:peCSVFileReadLWC>
+</aura:component>
